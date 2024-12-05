@@ -1,0 +1,64 @@
+/* Đặt toàn bộ trang web sử dụng block layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Căn giữa các phần tử theo chiều ngang */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  height: 100vh; /* Chiều cao toàn màn hình */
+  background-color: #f0f0f0; /* Màu nền nhẹ nhàng */
+}
+
+/* Đặt khoảng cách giữa các phần tử */
+.container {
+  display: block;
+  width: 300px; /* Đặt chiều rộng cố định cho container */
+  margin: 20px 0; /* Khoảng cách giữa các container */
+  padding: 20px; /* Khoảng cách bên trong container */
+  background-color: #fff; /* Màu nền trắng cho container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  border-radius: 8px; /* Bo góc container */
+}
+
+form div {
+  margin-bottom: 15px; /* Khoảng cách giữa các trường trong form */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Khoảng cách giữa nhãn và trường nhập liệu */
+}
+
+input {
+  width: 100%; /* Đặt chiều rộng của input bằng chiều rộng của container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của input */
+}
+
+button {
+  width: 100%; /* Đặt chiều rộng của button bằng chiều rộng của container */
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Đặt khoảng cách cho các thông báo lỗi và thành công */
+p {
+  margin: 10px 0;
+}
+
+/* Căn chỉnh tiêu đề */
+h1 {
+  margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và container */
+  text-align: center; /* Căn giữa tiêu đề */
+}
